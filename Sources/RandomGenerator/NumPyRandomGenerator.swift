@@ -12,7 +12,7 @@ import CoreML
 ///  This implementation matches:
 ///  [NumPy's older randomkit.c](https://github.com/numpy/numpy/blob/v1.0/numpy/random/mtrand/randomkit.c)
 ///
-public class NumPyRandomSource: RandomGenerator {
+public class NumPyRandomGenerator: RandomGenerator {
     struct State {
         var key = [UInt32](repeating: 0, count: 624)
         var pos: Int = 0

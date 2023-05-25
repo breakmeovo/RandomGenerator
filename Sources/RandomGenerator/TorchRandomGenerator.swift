@@ -15,7 +15,7 @@ import CoreML
 ///  https://github.com/pytorch/pytorch/blob/master/aten/src/ATen/native/cpu/DistributionKernels.cpp
 ///  https://github.com/pytorch/pytorch/blob/master/aten/src/ATen/core/TransformationHelper.h
 ///
-public class TorchRandomSource: RandomGenerator {
+public class TorchRandomGenerator: RandomGenerator {
     struct State {
         var key = [UInt32](repeating: 0, count: 624)
         var pos: Int = 0
